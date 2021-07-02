@@ -1,6 +1,7 @@
 version: 1
 applications:
-  - frontend:
+  - appRoot: /web/rust/dashboard-rs
+    frontend:
       phases:
         build:
           commands:
@@ -15,4 +16,4 @@ applications:
           - 'dist/**/*'
       cache:
         paths: []
-    appRoot: /web/rust/dashboard-rs
+    
