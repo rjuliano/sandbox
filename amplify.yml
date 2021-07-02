@@ -15,4 +15,4 @@ applications:
           - 'dist/**/*'
       cache:
         paths: []
-    appRoot: web/rust/dashboard-rs
+    appRoot: /web/rust/dashboard-rs
