@@ -1,1 +1,1 @@
-# amplify-samples-android
+# Random stuff
