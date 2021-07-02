@@ -6,7 +6,8 @@ applications:
         build:
           commands:
             - curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-            - rustup default stable -y
+            - source $HOME/.cargo/env
+            - rustup default stable 
             - cargo install --locked trunk
             - cargo install wasm-bindgen-cli
             - trunk build
