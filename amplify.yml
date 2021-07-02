@@ -1,0 +1,18 @@
+version: 1
+applications:
+  - frontend:
+      phases:
+        build:
+          commands:
+            - curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+            - rustup default stable
+            - cargo install --locked trunk
+            - cargo install wasm-bindgen-cli
+            - trunk build
+      artifacts:
+        baseDirectory: /
+        files:
+          - 'dist/**/*'
+      cache:
+        paths: []
+    appRoot: web/rust/dashboard-rs
