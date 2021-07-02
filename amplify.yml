@@ -15,9 +15,9 @@ applications:
           commands:
             - trunk build
       artifacts:
-        baseDirectory: /
+        baseDirectory: /dist
         files:
-          - 'dist/**/*'
+          - '**/*'
       cache:
         paths: []
     
