@@ -6,7 +6,7 @@ applications:
         preBuild:
           commands:
             # - curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-            - source $HOME/.cargo/env
+            # - source $HOME/.cargo/env
             # - rustup toolchain install stable 
             - echo $PATH
             - which rustc
