@@ -6,6 +6,7 @@ applications:
         preBuild:
           commands:
             - echo 'Pre-build phase'
+            - echo $PATH
         build:
           commands:
             - echo 'Build phase'
