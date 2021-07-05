@@ -4,7 +4,7 @@
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 use console_error_panic_hook::set_once as set_panic_hook;
-use wasm_bindgen::prelude::*;
+use myalerts;
 use web_sys::window;
 
 fn start_app() {
@@ -14,13 +14,8 @@ fn start_app() {
     body.append_child(text_node.as_ref()).expect("Failed to append text");
 }
 
-#[wasm_bindgen(inline_js = "export function snippetTest() { console.log('Hello from JS FFI!'); }")]
-extern "C" {
-    fn snippetTest();
-}
-
 fn main() {
     set_panic_hook();
-    snippetTest();
     start_app();
+    myalerts::wasm::greet("From the greet function in myalerts crate.")
 }

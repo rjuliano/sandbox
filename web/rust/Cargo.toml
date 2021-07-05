@@ -1,0 +1,2 @@
+[workspace]
+members = ["myalerts", "dashboard-rs"]

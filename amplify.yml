@@ -7,7 +7,6 @@ applications:
           commands:
             - echo 'Pre-build phase'
             - PATH=/usr/local/cargo/bin:$PATH
-            - echo $PATH
         build:
           commands:
             - echo 'Build phase'
