@@ -20,10 +20,9 @@ frontend:
         - yarn install
     build:
       commands:
-        - cd frontend
         - yarn run build
   artifacts:
-    baseDirectory: build
+    baseDirectory: frontend/.next
     files:
       - '**/*'
   cache:
