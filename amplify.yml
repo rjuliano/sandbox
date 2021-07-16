@@ -11,18 +11,17 @@ backend:
         # - pip3.8 install -r requirements.txt --target=./python/lib/python3.8/site-packages
         # - pip3.8 install pipenv
         # - cd $BASE_PATH
-        # - amplifyPush --simple
+        - amplifyPush --simple
 frontend:
   phases:
     preBuild:
       commands:
-        - cd frontend
         - yarn install
     build:
       commands:
         - yarn run build
   artifacts:
-    baseDirectory: frontend/.next
+    baseDirectory: .next
     files:
       - '**/*'
   cache:
