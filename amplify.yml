@@ -6,11 +6,12 @@ backend:
         - export BASE_PATH=$(pwd)
     build:
       commands:
-        # - alternatives --install /usr/bin/python3 python3 /usr/local/bin/python3.8 10
-        # - cd amplify/backend/function/numpypandasLayer/opt
+        - alternatives --install /usr/bin/python3 python3 /usr/local/bin/python3.8 10
+        - cd amplify/backend/function/OpsManagerEventProcessor/
         # - pip3.8 install -r requirements.txt --target=./python/lib/python3.8/site-packages
-        # - pip3.8 install pipenv
-        # - cd $BASE_PATH
+        - pip3.8 install pipenv
+        - pipenv install
+        - cd $BASE_PATH
         - amplifyPush --simple
 frontend:
   phases:

@@ -14,5 +14,21 @@
       "service": "Lambda",
       "dependsOn": []
     }
+  },
+  "api": {
+    "OpsManagerApi": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "OpsManagerEventProcessor",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ]
+    }
   }
 }

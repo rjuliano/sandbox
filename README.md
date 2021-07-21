@@ -58,3 +58,16 @@ Successfully added resource OpsManagerEventProcessor locally.
 ```bash
 amplify push
 ```
+
+```bash
+amplify add api
+? Please select from one of the below mentioned services: REST
+? Provide a friendly name for your resource to be used as a label for this category in the project: OpsManagerApi
+? Provide a path (e.g., /book/{isbn}): /github/webhook/events
+? Choose a Lambda source Use a Lambda function already added in the current Amplify project
+? Choose the Lambda function to invoke by this path OpsManagerEventProcessor
+? Restrict API access No
+? Do you want to add another path? No
+Successfully added resource OpsManagerApi locally
+
+```

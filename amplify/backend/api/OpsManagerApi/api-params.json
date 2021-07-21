@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/github/webhook/events",
+      "lambdaFunction": "OpsManagerEventProcessor",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/github/webhook/events"
+    }
+  ],
+  "resourceName": "OpsManagerApi",
+  "apiName": "OpsManagerApi",
+  "functionArns": [
+    {
+      "lambdaFunction": "OpsManagerEventProcessor"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-opsmanager-dev-155112-authRole",
+    "unAuthRoleName": "amplify-opsmanager-dev-155112-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "OpsManagerEventProcessor",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
