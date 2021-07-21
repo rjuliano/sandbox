@@ -16,7 +16,7 @@ export default function Home() {
       <div className="row">
         <div className="col-7">
           <div className="container">
-            <div class="row">
+            <div className="row">
               <div className="col-12">
                 <form className="card ">
                   <div className="card-header">
