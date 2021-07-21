@@ -24,24 +24,24 @@ export default function Home() {
                   </div>
                   <div className="card-body">
                     <div className="row">
-                      <label for="githubUserOrOrg" className="col-form-label-sm col-sm-3 ">Github account type:</label>
+                      <label htmlFor="githubUserOrOrg" className="col-form-label-sm col-sm-3 ">Github account type:</label>
 
                       <div className="form-check form-check-inline col-sm-1 pt-2">
                         <input className="form-check-input" type="radio" name="githubUserOrOrg" id="radioUser" />
-                        <label className="form-check-label" for="radioUser">
+                        <label className="form-check-label" htmlFor="radioUser">
                           User
                         </label>
                       </div>
                       <div className="form-check form-check-inline col pt-2">
                         <input className="form-check-input" type="radio" name="githubUserOrOrg" id="radioOrg" />
-                        <label className="form-check-label" for="radioOrg">
+                        <label className="form-check-label" htmlFor="radioOrg">
                           Org
                         </label>
                       </div>
                     </div>
 
                     <div className="row">
-                      <label for="githubName" className="col-form-label-sm col-sm-3">Github name:</label>
+                      <label htmlFor="githubName" className="col-form-label-sm col-sm-3">Github name:</label>
                       <div className="col pt-2">
                         <input type="text" className="form-control" id="githubName" />
                       </div>
