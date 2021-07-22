@@ -10,8 +10,10 @@ ssm_client = boto3.client('ssm')
 
 def handler(event, context):
     # print('Raw event:')
-    # print(event)
-    
+    print(event)
+    if 'source' in event:
+        return handle_aws_event(event, context)
+
     if 'X-GitHub-Event' not in event['headers']:
         return {
             'statusCode': 400,
@@ -88,7 +90,14 @@ def get_private_key():
         WithDecryption=True
     )
     return ssm_param_response['Parameter']['Value']
-    
 
-
-
+def handle_aws_event(event, context):
+    {
+        'statusCode': 200,
+        'headers': {
+            'Access-Control-Allow-Headers': '*',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
+        },
+        'body': json.dumps({})
+    }
