@@ -41,6 +41,7 @@ def handler(event, context):
     
     event_type = event['headers']["X-GitHub-Event"];
 
+    action = None
     if 'action' in body:
         action = body['action'];
     
