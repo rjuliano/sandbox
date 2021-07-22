@@ -27,7 +27,7 @@ def handler(event, context):
     print(json.dumps(body))
 
     hash_from_gh = event['headers']['X-Hub-Signature-256']
-    if not validate_request(hash_from_gh):
+    if not validate_request(hash_from_gh, event['body']):
         return {
             'statusCode': 400,
             'headers': {
