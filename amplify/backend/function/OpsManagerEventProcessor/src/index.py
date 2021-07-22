@@ -40,8 +40,12 @@ def handler(event, context):
 
     
     event_type = event['headers']["X-GitHub-Event"];
-    action = body['action'];
-    installation_id = body['installation']['id'];
+
+    if 'action' in body:
+        action = body['action'];
+    
+    if 'installation' in body:
+        installation_id = body['installation']['id'];
     
     github_client = login_as_app_installation(installation_id=installation_id)
 
