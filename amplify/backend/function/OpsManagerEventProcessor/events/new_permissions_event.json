@@ -1,0 +1,137 @@
+{
+    "resource": "/github/webhook/events",
+    "path": "/github/webhook/events",
+    "httpMethod": "POST",
+    "headers": {
+        "Accept": "*/*",
+        "CloudFront-Forwarded-Proto": "https",
+        "CloudFront-Is-Desktop-Viewer": "true",
+        "CloudFront-Is-Mobile-Viewer": "false",
+        "CloudFront-Is-SmartTV-Viewer": "false",
+        "CloudFront-Is-Tablet-Viewer": "false",
+        "CloudFront-Viewer-Country": "US",
+        "content-type": "application/json",
+        "Host": "eudpfpo376.execute-api.us-east-1.amazonaws.com",
+        "User-Agent": "GitHub-Hookshot/de1ee30",
+        "Via": "1.1 ddeb8679359f033dad405557c487bfdd.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Id": "9uAnRGkmQnOFLAjFd8Z7CGQXRkNWCIvTGrWWB3VOgyPjOqWqjMgv9Q==",
+        "X-Amzn-Trace-Id": "Root=1-60ef15a4-4a0fd4192b51d5c305d207d5",
+        "X-Forwarded-For": "140.82.115.154, 130.176.98.164",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https",
+        "X-GitHub-Delivery": "87447ca0-e4b8-11eb-82a2-454cb68055b9",
+        "X-GitHub-Event": "installation",
+        "X-GitHub-Hook-ID": "306214224",
+        "X-GitHub-Hook-Installation-Target-ID": "125186",
+        "X-GitHub-Hook-Installation-Target-Type": "integration",
+        "X-Hub-Signature": "sha1=b4f314817c2af0cc9a927338d06d24b3955f8ff9",
+        "X-Hub-Signature-256": "sha256=85fea07a5c6f9e2fbe45c89f498079bcc9c24cb53f794e2b0b1d96061265f65a"
+    },
+    "multiValueHeaders": {
+        "Accept": [
+            "*/*"
+        ],
+        "CloudFront-Forwarded-Proto": [
+            "https"
+        ],
+        "CloudFront-Is-Desktop-Viewer": [
+            "true"
+        ],
+        "CloudFront-Is-Mobile-Viewer": [
+            "false"
+        ],
+        "CloudFront-Is-SmartTV-Viewer": [
+            "false"
+        ],
+        "CloudFront-Is-Tablet-Viewer": [
+            "false"
+        ],
+        "CloudFront-Viewer-Country": [
+            "US"
+        ],
+        "content-type": [
+            "application/json"
+        ],
+        "Host": [
+            "eudpfpo376.execute-api.us-east-1.amazonaws.com"
+        ],
+        "User-Agent": [
+            "GitHub-Hookshot/de1ee30"
+        ],
+        "Via": [
+            "1.1 ddeb8679359f033dad405557c487bfdd.cloudfront.net (CloudFront)"
+        ],
+        "X-Amz-Cf-Id": [
+            "9uAnRGkmQnOFLAjFd8Z7CGQXRkNWCIvTGrWWB3VOgyPjOqWqjMgv9Q=="
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-60ef15a4-4a0fd4192b51d5c305d207d5"
+        ],
+        "X-Forwarded-For": [
+            "140.82.115.154, 130.176.98.164"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ],
+        "X-GitHub-Delivery": [
+            "87447ca0-e4b8-11eb-82a2-454cb68055b9"
+        ],
+        "X-GitHub-Event": [
+            "installation"
+        ],
+        "X-GitHub-Hook-ID": [
+            "306214224"
+        ],
+        "X-GitHub-Hook-Installation-Target-ID": [
+            "125186"
+        ],
+        "X-GitHub-Hook-Installation-Target-Type": [
+            "integration"
+        ],
+        "X-Hub-Signature": [
+            "sha1=b4f314817c2af0cc9a927338d06d24b3955f8ff9"
+        ],
+        "X-Hub-Signature-256": [
+            "sha256=85fea07a5c6f9e2fbe45c89f498079bcc9c24cb53f794e2b0b1d96061265f65a"
+        ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "resourceId": "trtc9z",
+        "resourcePath": "/github/webhook/events",
+        "httpMethod": "POST",
+        "extendedRequestId": "CeBRvH8tIAMF6Yw=",
+        "requestTime": "14/Jul/2021:16:49:40 +0000",
+        "path": "/dev/github/webhook/events",
+        "accountId": "1234567890",
+        "protocol": "HTTP/1.1",
+        "stage": "dev",
+        "domainPrefix": "eudpfpo376",
+        "requestTimeEpoch": 1626281380590,
+        "requestId": "12f83944-9cf8-4656-abf4-03b80797ab02",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "accountId": null,
+            "cognitoIdentityId": null,
+            "caller": null,
+            "sourceIp": "140.82.115.154",
+            "principalOrgId": null,
+            "accessKey": null,
+            "cognitoAuthenticationType": null,
+            "cognitoAuthenticationProvider": null,
+            "userArn": null,
+            "userAgent": "GitHub-Hookshot/de1ee30",
+            "user": null
+        },
+        "domainName": "eudpfpo376.execute-api.us-east-1.amazonaws.com",
+        "apiId": "eudpfpo376"
+    },
+    "body": "{\"action\":\"new_permissions_accepted\",\"installation\":{\"id\":18133638,\"account\":{\"login\":\"rjuliano\",\"id\":2077790,\"node_id\":\"MDQ6VXNlcjIwNzc3OTA=\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/2077790?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/rjuliano\",\"html_url\":\"https://github.com/rjuliano\",\"followers_url\":\"https://api.github.com/users/rjuliano/followers\",\"following_url\":\"https://api.github.com/users/rjuliano/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/rjuliano/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/rjuliano/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/rjuliano/subscriptions\",\"organizations_url\":\"https://api.github.com/users/rjuliano/orgs\",\"repos_url\":\"https://api.github.com/users/rjuliano/repos\",\"events_url\":\"https://api.github.com/users/rjuliano/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/rjuliano/received_events\",\"type\":\"User\",\"site_admin\":false},\"repository_selection\":\"selected\",\"access_tokens_url\":\"https://api.github.com/app/installations/18133638/access_tokens\",\"repositories_url\":\"https://api.github.com/installation/repositories\",\"html_url\":\"https://github.com/settings/installations/18133638\",\"app_id\":125186,\"app_slug\":\"raf-s-gh-app\",\"target_id\":2077790,\"target_type\":\"User\",\"permissions\":{\"actions\":\"write\",\"secrets\":\"write\",\"contents\":\"read\",\"metadata\":\"read\",\"workflows\":\"write\",\"pull_requests\":\"write\"},\"events\":[\"pull_request\",\"pull_request_review_comment\"],\"created_at\":\"2021-07-07T12:24:23.000-04:00\",\"updated_at\":\"2021-07-14T11:31:15.000-04:00\",\"single_file_name\":null,\"has_multiple_single_files\":false,\"single_file_paths\":[],\"suspended_by\":null,\"suspended_at\":null},\"sender\":{\"login\":\"rjuliano\",\"id\":2077790,\"node_id\":\"MDQ6VXNlcjIwNzc3OTA=\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/2077790?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/rjuliano\",\"html_url\":\"https://github.com/rjuliano\",\"followers_url\":\"https://api.github.com/users/rjuliano/followers\",\"following_url\":\"https://api.github.com/users/rjuliano/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/rjuliano/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/rjuliano/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/rjuliano/subscriptions\",\"organizations_url\":\"https://api.github.com/users/rjuliano/orgs\",\"repos_url\":\"https://api.github.com/users/rjuliano/repos\",\"events_url\":\"https://api.github.com/users/rjuliano/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/rjuliano/received_events\",\"type\":\"User\",\"site_admin\":false}}",
+    "isBase64Encoded": false
+}
