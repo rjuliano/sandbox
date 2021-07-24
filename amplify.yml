@@ -17,6 +17,8 @@ frontend:
   phases:
     preBuild:
       commands:
+        - amplify pull $AWS_APP_ID
+        - ls -al ./src
         - yarn install
     build:
       commands:
