@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "opsmanager2956ee3a_identitypool_2956ee3a",
+    "identityPoolName": "opsmanager_identity",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "opsman2956ee3a",
-    "userPoolName": "opsmanager2956ee3a_userpool_2956ee3a",
+    "resourceNameTruncated": "opsman7856f30d",
+    "userPoolName": "opsmanager_userpool",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -21,17 +21,17 @@
         "email"
     ],
     "userpoolClientGenerateSecret": false,
-    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientRefreshTokenValidity": "1",
     "userpoolClientWriteAttributes": [
         "email"
     ],
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "opsman2956ee3a_userpoolclient_lambda_role",
-    "userpoolClientSetAttributes": false,
-    "sharedId": "2956ee3a",
-    "resourceName": "opsmanager2956ee3a",
+    "userpoolClientLambdaRole": "opsman7856f30d_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": true,
+    "sharedId": "7856f30d",
+    "resourceName": "opsmanager",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -45,12 +45,27 @@
             "Arn"
         ]
     },
-    "useDefault": "default",
+    "useDefault": "manual",
+    "thirdPartyAuth": true,
+    "authProviders": [],
     "usernameAttributes": [
         "email"
     ],
+    "userPoolGroups": false,
+    "adminQueries": false,
+    "triggers": "{}",
+    "hostedUI": true,
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
-    "dependsOn": []
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "breakCircularDependency": true,
+    "permissions": [],
+    "dependsOn": [],
+    "hostedUIDomainName": "opsmanager",
+    "authProvidersUserPool": [],
+    "hostedUIProviderMeta": "[]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"email\",\"openid\",\"profile\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}"
 }
