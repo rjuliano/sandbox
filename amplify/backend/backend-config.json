@@ -1,6 +1,6 @@
 {
   "auth": {
-    "opsmanager2956ee3a": {
+    "opsmanager": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
